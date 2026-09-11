@@ -3,30 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clean Water Starts With Us | charity: water</title>
+  <title>Our Family. Their Future. Clean Water. | charity: water</title>
   <style>
-    /* Global Styles */
+    /* Brand Palette based on Project Slide */
     :root {
-      --primary-yellow: #FFC907;
-      --water-blue: #00A3E0;
-      --dark-navy: #1C2B36;
-      --light-bg: #F4F7F9;
+      --jerry-can-yellow: #F4B41A;
+      --dark-blue: #2B5B84;
+      --cream-bg: #F5F0E8;
+      --text-dark: #1C2B36;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif;
     }
 
     body {
-      background-color: var(--light-bg);
-      color: var(--dark-navy);
+      background-color: var(--cream-bg);
+      color: var(--text-dark);
       line-height: 1.6;
     }
 
-    /* Navigation */
+    /* Navigation Header */
     nav {
       background: #ffffff;
       padding: 16px 32px;
@@ -37,20 +37,20 @@
     }
 
     .logo {
-      font-weight: bold;
+      font-weight: 800;
       font-size: 1.3rem;
-      color: var(--dark-navy);
+      color: var(--dark-blue);
       text-decoration: none;
     }
 
     .logo span {
-      color: var(--water-blue);
+      color: var(--jerry-can-yellow);
     }
 
-    /* Hero Section with High-Quality Water Image */
+    /* Hero Section using water.jpg */
     .hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                  url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                  url('water.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 120px 20px;
@@ -58,20 +58,21 @@
 
     .hero h1 {
       font-size: 2.8rem;
+      font-weight: 800;
       margin-bottom: 16px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     }
 
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       max-width: 650px;
       margin: 0 auto 28px;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      text-shadow: 0 1px 3px rgba(0,0,0,0.4);
     }
 
     .cta-button {
-      background-color: var(--primary-yellow);
-      color: var(--dark-navy);
+      background-color: var(--jerry-can-yellow);
+      color: var(--text-dark);
       padding: 14px 28px;
       text-decoration: none;
       font-weight: bold;
@@ -82,24 +83,31 @@
 
     .cta-button:hover {
       transform: scale(1.05);
-      background-color: #e5b300;
+      background-color: #d99f14;
     }
 
-    /* Story Section */
-    .story {
+    .hero-subtag {
+      margin-top: 18px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--cream-bg);
+    }
+
+    /* Audience & ASU Section */
+    .asu-section {
       max-width: 800px;
       margin: 60px auto 40px;
       padding: 0 20px;
       text-align: center;
     }
 
-    .story h2 {
+    .asu-section h2 {
       font-size: 2rem;
-      color: var(--water-blue);
+      color: var(--dark-blue);
       margin-bottom: 16px;
     }
 
-    /* Impact Cards */
+    /* Value Proposition Grid */
     .impact-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -122,7 +130,12 @@
       transform: translateY(-5px);
     }
 
-    /* Newsletter / Social Subscribe Section */
+    .card h3 {
+      color: var(--dark-blue);
+      margin-bottom: 8px;
+    }
+
+    /* Subscription & Social Section */
     .subscribe-section {
       background-color: #ffffff;
       border-top: 1px solid #e1e4e8;
@@ -133,7 +146,7 @@
 
     .subscribe-section h3 {
       font-size: 1.8rem;
-      color: var(--dark-navy);
+      color: var(--dark-blue);
       margin-bottom: 10px;
     }
 
@@ -160,7 +173,7 @@
     }
 
     .subscribe-form button {
-      background-color: var(--water-blue);
+      background-color: var(--dark-blue);
       color: white;
       border: none;
       padding: 12px 24px;
@@ -171,12 +184,12 @@
     }
 
     .subscribe-form button:hover {
-      background-color: #0082b3;
+      background-color: #1e3f5d;
     }
 
     .social-links a {
       margin: 0 12px;
-      color: var(--water-blue);
+      color: var(--dark-blue);
       text-decoration: none;
       font-weight: bold;
       font-size: 1.05rem;
@@ -188,62 +201,63 @@
 
     /* Footer */
     footer {
-      background: var(--dark-navy);
+      background: var(--dark-blue);
       color: white;
       text-align: center;
       padding: 24px;
     }
 
     footer a {
-      color: var(--primary-yellow);
+      color: var(--jerry-can-yellow);
       text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header & Navigation -->
+  <!-- Navigation -->
   <nav>
     <a href="https://www.charitywater.org" target="_blank" class="logo">charity: <span>water</span></a>
     <a href="https://www.charitywater.org/donate" target="_blank" class="cta-button" style="padding: 8px 18px; font-size: 0.9rem;">Donate</a>
   </nav>
 
-  <!-- Hero Section with Background Photo -->
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Clean Water Changes Everything</h1>
-    <p>Join ASU students in bringing clean, safe drinking water to communities in need around the globe.</p>
-    <a href="https://www.charitywater.org/donate" target="_blank" class="cta-button">Donate on charitywater.org</a>
+    <h1>Our Family. Their Future. Clean Water.</h1>
+    <p>Join your church family and fellow ASU students to bring clean water to a community in need. 100% of your donation goes directly to building wells.</p>
+    <a href="https://www.charitywater.org/donate" target="_blank" class="cta-button">Donate Now & See Your Impact</a>
+    <p class="hero-subtag">100% of your donation funds clean water projects. See the well you build.</p>
   </section>
 
-  <!-- Story Section -->
-  <section class="story">
-    <h2>Why Water?</h2>
-    <p>771 million people live without clean water. That’s nearly 1 in 10 people worldwide. When a community gets clean water, it improves health, empowers women, and opens doors to education.</p>
+  <!-- ASU Student Focus -->
+  <section class="asu-section">
+    <h2>ASU Students Putting Faith into Action</h2>
+    <p>As college students, we believe small actions create lasting change. With charity: water, your donation doesn't disappear into overhead. We prove every project with GPS coordinates and photos so you can feel confident your support changes lives.</p>
   </section>
 
-  <!-- Impact Grid -->
+  <!-- Impact Cards -->
   <section class="impact-grid">
     <div class="card">
-      <h3>100% Model</h3>
-      <p>100% of public donations directly fund clean water projects in the field.</p>
+      <h3>100% Direct Model</h3>
+      <p>100% of public donations fund clean water projects directly in the field.</p>
     </div>
     <div class="card">
-      <h3>Track Every Dollar</h3>
-      <p>We prove every project with GPS coordinates and photos on Google Maps.</p>
+      <h3>GPS Proof</h3>
+      <p>We prove every completed well with GPS coordinates and photos on Google Maps.</p>
     </div>
     <div class="card">
-      <h3>Local Impact</h3>
-      <p>We partner with local experts on the ground to ensure long-term sustainability.</p>
+      <h3>Community Focused</h3>
+      <p>Local partnerships ensure long-term, sustainable clean water access.</p>
     </div>
   </section>
 
-  <!-- Newsletter & Social Section -->
+  <!-- Subscribe & Social Section -->
   <section class="subscribe-section">
-    <h3>Stay Connected & Take Action</h3>
-    <p>Subscribe to receive stories from the field and updates on clean water projects.</p>
+    <h3>Stay Connected with charity: water</h3>
+    <p>Subscribe to follow progress, view well updates, and get involved on campus.</p>
 
     <form class="subscribe-form" action="https://www.charitywater.org/take-action" target="_blank">
-      <input type="email" placeholder="Enter your email address" required />
+      <input type="email" placeholder="Enter your student email" required />
       <button type="submit">Subscribe</button>
     </form>
 
@@ -258,7 +272,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>Built for the charity: water Campaign • Official site: <a href="https://www.charitywater.org" target="_blank">charitywater.org</a></p>
+    <p>Built by DJ Bello • ASU Student Campaign • <a href="https://www.charitywater.org" target="_blank">charitywater.org</a></p>
   </footer>
 
 </body>
